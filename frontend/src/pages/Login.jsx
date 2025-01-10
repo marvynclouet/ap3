@@ -74,6 +74,14 @@ const Login = () => {
             <button type='submit' className='bg-black text-white font-light px-8 py-2 mt-4'>
                 {currentState === 'Login' ? 'Sign in' : 'Sign up'}
             </button>
+            
+            <button 
+                type="button"
+                onClick={() => window.location.href = 'http://localhost:5174/loginAdmin'} 
+                className='text-gray-600 hover:text-black mt-2'
+            >
+                Accès Administration
+            </button>
         </form>
     )
 }
